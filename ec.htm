@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <form name="rl_mat_calc" method="post" action="#emi_calculator" onsubmit="if (!window.__cfRLUnblockHandlers) return false; calcclick(); return false;">
+    <input type="hidden" name="itype" id="itype" value="3420"><input type="hidden" name="itype_name"
+        id="itype_name" value="nri_home_loans"><fieldset>
+            <label for="ivalue">
+                Loan Amount</label><input type="text" id="ivalue" name="ivalue" value="1000000" onfocus="if (!window.__cfRLUnblockHandlers) return false; document.rl_mat_calc.isubmit.disabled=true;"
+                    onblur="if (!window.__cfRLUnblockHandlers) return false; integerInRange(this,1,30000000);"
+                    size="6" maxlength="8" title="Loan Value (Max: 30,000,000.00)"><label for="irate">Rate
+                        of Interest</label><input type="text" id="irate" name="irate" value="9.75" onfocus="if (!window.__cfRLUnblockHandlers) return false; document.rl_mat_calc.isubmit.disabled=true;"
+                            onblur="if (!window.__cfRLUnblockHandlers) return false; integerInRange(this,1,36);"
+                            size="6" maxlength="5" title="Loan Rate (Max: 36.00 %)"><label for="iperiod">Period</label><select
+                                name="iperiod" id="iperiod"><option value="12">1 Years</option>
+                                <option value="24">2 Years</option>
+                                <option value="36">3 Years</option>
+                                <option value="48">4 Years</option>
+                                <option value="60">5 Years</option>
+                                <option value="72">6 Years</option>
+                                <option value="84">7 Years</option>
+                                <option value="96">8 Years</option>
+                                <option value="108">9 Years</option>
+                                <option value="120">10 Years</option>
+                                <option value="132">11 Years</option>
+                                <option value="144">12 Years</option>
+                                <option value="156">13 Years</option>
+                                <option value="168">14 Years</option>
+                                <option value="180">15 Years</option>
+                                <option value="192">16 Years</option>
+                                <option value="204">17 Years</option>
+                                <option value="216">18 Years</option>
+                                <option value="228">19 Years</option>
+                                <option value="240">20 Years</option>
+                                <option value="252">21 Years</option>
+                                <option value="264">22 Years</option>
+                                <option value="276">23 Years</option>
+                                <option value="288">24 Years</option>
+                                <option value="300" selected="selected">25 Years</option>
+                            </select><input type="submit" id="calc_amt" name="isubmit" value="Calculate »" title="Click Here to Show Monthly EMI"></fieldset>
+    </form>
+    <div id="dep_mat_value">
+        <p>
+            For a Home Loan for NRI of <span class="rupee_value" title="Rs. 10,00,000"><span
+                class="WebRupee">Rs. </span>10,00,000</span> repayable in 300 equal monthly
+            instalments at an interest rate of 9.75% p.a., the equated monthly instalment (EMI)
+            payment shall be around <strong><span class="rupee_value" title="Rs. 8,911.37"><span
+                class="WebRupee">Rs. </span>8,911.37</span></strong>. Click for <a href="/emi_calculator/itype-3420/ivalue-1000000/irate-9.75/iperiod-300/find_out_the_emi_for_loans_provided_by_tmb.html#amortization_chart"
+                    title="find out the emi for loans provided by tmb"><strong>Monthly Amortization Chart</strong></a>.</p>
+    </div>
+    <script src="js/ec.js" type="text/javascript"></script>
+</body>
+</html>

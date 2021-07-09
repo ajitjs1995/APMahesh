@@ -1,0 +1,23 @@
+User-Agent: *
+
+Disallow: /tmbadm/
+Disallow: /App_Code/
+Disallow: /Bin/
+Disallow: /ckeditor/
+Disallow: /database/
+Disallow: /ErrorLog/
+Disallow: /lib/
+
+Allow: /css
+Allow: /js
+Allow: /pdf
+Allow: /forms
+Allow: /doc
+Allow: /engine1
+Allow: /images
+
+Crawl-delay: 5
+
+Sitemap: https://www.tmb.in/Page-Sitemap.xml
+Sitemap: https://www.tmb.in/Pdf-Sitemap.xml
+Sitemap: https://www.tmb.in/Image-Sitemap.xml

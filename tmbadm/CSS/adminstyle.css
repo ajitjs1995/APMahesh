@@ -1,0 +1,17 @@
+﻿/* File Created: September 30, 2019 */
+.admtbl
+{
+    border: Solid thin #cccccc;
+    background-color: #F3F3F3;
+    width: 100%;
+}
+.tdHeader
+{
+    background-color: #585757;
+    height: 26px;
+    color: White;
+}
+.error {
+	color: Red;
+
+}

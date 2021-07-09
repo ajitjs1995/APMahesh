@@ -1,0 +1,23 @@
+.footer-bottom-bar{width:inherit;text-align:center;font-size:14px;background:#cccccc;line-height:0;padding:4px;margin:0 auto;overflow:hidden;bottom:0;z-index:99;position:fixed;}
+.footer-bottom-bar marquee{line-height:1.5;margin-bottom:0;color:#0d329c;}
+.footer-bottom-bar a{text-decoration:none;color:#333}
+#maindiv{display:block;white-space:nowrap}
+#div1{display:inline-block;margin-left:50px;margin-right:30px;font-size:14px;font-weight:bold;animation:marquee 30s linear infinite}
+#div2{display:inline-block;font-size:14px;font-weight:bold;margin-left:50px;animation:marquee2 30s linear infinite;animation-delay:20s}
+#maindiv:hover>div{marquee-animation-play-state:paused;animation-play-state:paused}
+#mobilediv:hover>div{animation-play-state:paused}
+@keyframes marquee{from{transform:translateX(100%);-webkit-transform:translateX(100%);-moz-transform:translateX(100%);-ms-transform:translateX(100%);-o-transform:translateX(100%)}
+to{transform:translateX(-100%);-webkit-transform:translateX(-100%);-moz-transform:translateX(-100%);-ms-transform:translateX(-100%);-o-transform:translateX(-100%)}
+}
+@keyframes marquee2{from{transform:translateX(0);-webkit-transform:translateX(0);-moz-transform:translateX(0);-ms-transform:translateX(0);-o-transform:translateX(0)}
+to{transform:translateX(-200%);-webkit-transform:translateX(-200%);-moz-transform:translateX(-200%);-ms-transform:translateX(-200%);-o-transform:translateX(-200%)}
+}
+#mobilediv{display:none}
+@media screen and (max-width:640px){.footer-bottom-bar{width:100%;text-align:center;font-size:14;background:#cccccc;line-height:0;padding:0px;margin:0 auto;overflow:hidden;bottom:0;z-index:99999;position:fixed;}
+@keyframes marquee{from{transform:translate(0,0);-webkit-transform:translate(0,0);-moz-transform:translate(0,0);-ms-transform:translate(0,0);-o-transform:translate(0,0)}
+to{transform:translate(-100%,0);-webkit-transform:translate(-100%,0);-moz-transform:translate(-100%,0);-ms-transform:translate(-100%,0);-o-transform:translate(-100%,0)}
+}
+#div1{display:inline-block;font-size:16px;font-weight:bold;padding-left:100%;text-indent:0;animation:marquee 19s linear infinite}
+#mobilediv{display:block;white-space:nowrap}
+#maindiv{}
+}

@@ -1,0 +1,71 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="pgaboutusBinaryBanner.ascx.cs" Inherits="pgaboutusBinaryBanner" %>
+<%@ Register Src="~/youarehere.ascx" TagPrefix="uc" TagName="YouAreHere" %>
+<%@ Register Src="~/InnerPageBannercntrlBinary.ascx" TagPrefix="uc" TagName="InnerPageBannercntrlBinary" %>
+<%@ Register Src="~/getcontent.ascx" TagPrefix="uc" TagName="Getcontent" %>
+<%@ Register Src="~/menucntrl.ascx" TagPrefix="uc" TagName="Menucntrl" %>
+<%@ Register Src="~/bottomcntrl.ascx" TagPrefix="uc" TagName="Bottomcntrl" %>
+<%@ Register Src="~/TopcntrlAboutus.ascx" TagPrefix="uc" TagName="Topcntrl" %>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="css/nli-index-custom.min.css" type="text/css">
+<script type="text/javascript" async="" src="js/ga.js"></script>
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/vertical_menu.css" type="text/css" media="screen">
+<link rel="stylesheet" type="text/css" media="all" href="css/webslidemenu.css">
+<link rel="stylesheet" href="css/main.css" type="text/css">
+<link rel="stylesheet" href="css/homepage.css" type="text/css">
+<link rel="stylesheet" href="css/rates.css" type="text/css">
+<link rel="stylesheet" href="css/accordian.css" type="text/css">
+<link rel="stylesheet" href="css/homepage.min.css" type="text/css">
+<script type="text/javascript" src="js/homepage.min.js"></script>
+<link rel="stylesheet" href="css/bannerCarousel.min.css" type="text/css">
+<link rel="stylesheet" href="css/blog-style.css" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'/>
+<%--TOP CONTROLLER--%>
+<uc:Topcntrl runat="server" ID="ucTopcntrl" />
+<%--TOP CONTROLLER--%>
+<%--INNERPAGEBANNER CONTROLLER--%>
+<uc:InnerPageBannercntrlBinary runat="server" ID="InnerPageBannercntrlBinary" />
+<%--INNERPAGEBANNER CONTROLLER--%>
+<%--YOUAREHERE CONTROLLER--%>
+<uc:YouAreHere runat="server" ID="ucYouAreHere" />
+<%--YOUAREHERE CONTROLLER--%>
+<%--Menu CONTROLLER--%>
+<uc:Menucntrl runat="server" ID="ucMenucntrl" />
+<%--Menu CONTROLLER--%>
+<%--CONTENT CONTROLLER--%>
+<uc:Getcontent runat="server" ID="ucGetcontent" />
+<%--CONTENT CONTROLLER--%>
+<%--BOTTOM CONTROLLER--%>
+<uc:Bottomcntrl runat="server" ID="ucBottomcntrl" />
+<%--BOTTOM CONTROLLER--%>
+
+
+
+<!-- jQuery and friends -->
+<script type="text/javascript" src="lib/js/jquery-1.10.1.min.js"> </script>
+
+<!-- Bootstrap -->
+<script type="text/javascript" src="lib/js/bootstrap/bootstrap.js"></script>
+
+<!-- Bootstrap TabCollapse-->
+<script type="text/javascript" src="js/bootstrap-tabcollapse.js"></script>
+
+<script type="text/javascript">
+    $('button').on('click', function(){
+        alert('preserve attached java script data!');
+    });
+    $('#myTab').tabCollapse();
+</script>
+	<script>
+	$(window).scroll(function(){
+    if ($(window).scrollTop() >= 200) {
+        $('.headercontainer').addClass('fixed-header');
+    }
+    else {
+        $('.headercontainer').removeClass('fixed-header');
+    }
+});
+	
+</script>

@@ -1,0 +1,119 @@
+@font-face{
+    font-family:WebRupee;
+    src:url(fonts/WebRupee.V2.0.eot);
+    src:url(fonts/WebRupee.V2.0.eot?#iefix) format('embedded-opentype'),url(fonts/WebRupee.V2.0.woff) format('woff2'),url(fonts/WebRupee.V2.0.woff) format('woff'),url(fonts/WebRupee.V2.0.ttf) format('truetype'),url(fonts/WebRupee.V2.0.svg#WebRupee) format('svg');
+    font-weight:400;
+    font-style:normal
+}
+.WebRupee {
+    font-family: WebRupee;
+}
+ a:hover, a:focus
+    {
+        text-decoration: none;
+        outline: none;
+    }
+    #accordion .panel
+    {
+        border: none;
+        border-radius: 3px;
+        box-shadow: none;
+        margin-bottom: 5px;
+    }
+    #accordion .panel-heading
+    {
+        padding: 0;
+        border: none;
+        border-radius: 3px;
+    }
+    #accordion .panel-title a
+    {
+    display: block;
+    padding: 10px 20px;
+    background: #e3e3e3;
+    font-size: 15px;
+    /* font-weight: bold; */
+    border: 1px solid #ececec;
+    box-shadow: 0 0 10px rgba(0,0,0,.05);
+    position: relative;
+    transition: all 0.5s ease 0s;
+    color: #1b3a8c;
+    
+}
+    #accordion .panel-title a.collapsed
+    {
+        box-shadow: none;
+        color: #18378b;
+    }
+    #accordion .panel-title a:before, #accordion .panel-title a.collapsed:before
+    {
+       content: "+";
+    font-family: "Font Awesome 5 Free";
+    width: 30px;
+    height: 30px;
+    line-height: 28px;
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+    position: absolute;
+    top: 4px;
+    right: 15px;
+    transform: rotate(135deg);
+    transition: all 0.3s ease 0s;
+    }
+    #accordion .panel-title a.collapsed:before
+    {
+        color: #c60280;
+        transform: rotate(0);
+    }
+    #accordion .panel-title a:after
+    {
+        content: "";
+      
+        height: 100%;
+        /* background: #ececec; */
+        position: absolute;
+        top: 0;
+        right: 55px;
+    }
+    #accordion .panel-body
+    {
+        border: none;
+        font-size: 15px;
+        color: #000000;
+    }
+    p.red
+    {
+        color: #c72119;
+    }
+    hr
+    {
+        margin-top: 20px !important;
+        margin-bottom: 20px !important;
+        border: 0;
+        border-top: 1px solid #db241c !important;
+    }
+    .panel-body ul li
+    {
+        background: url(../images/downloadButton.png) no-repeat left center;
+        font-weight: 700;
+        list-style-type: none;
+        padding: 1rem 0 1rem 3rem;
+    }
+    .panel-body ul li
+    {
+        display: block !important;
+        font-size: 14px !important;
+        color: #000000 !important;
+        position: relative !important;
+        padding-left: 1.8rem !important;
+        padding-bottom: 15px !important;
+    }
+	.listing li {
+    background: url(../images/bullet.png) left top 7px no-repeat!important;
+    margin: 0 0 8px!important;
+    padding: 0 0 0 17px!important;
+    line-height: 24px!important;
+    font-weight: 300!important;
+}
+
